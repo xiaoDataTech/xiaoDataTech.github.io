@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>GDP是什么 | 晓数点 | Above all else, show the data.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="缘起19世纪时，还没有GDP的概念，那时研究经济的学者只能借助对一些日常生活中的观察，比如商店的销售情况、货物的运输情况等，来推测整体经济的运行情况。现代意义上的GDP概念，由美国经济学家Simon Kuznets在1934年提交给国会应对大萧条的报告中提出。Kuznets当时的想法是统一度量居民、公司和政府的所有经济活动。第一个正式的国名账户核算系统，可以追溯到1947年在英国经济学家Richa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GDP是什么">
+<meta property="og:url" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;index.html">
+<meta property="og:site_name" content="晓数点">
+<meta property="og:description" content="缘起19世纪时，还没有GDP的概念，那时研究经济的学者只能借助对一些日常生活中的观察，比如商店的销售情况、货物的运输情况等，来推测整体经济的运行情况。现代意义上的GDP概念，由美国经济学家Simon Kuznets在1934年提交给国会应对大萧条的报告中提出。Kuznets当时的想法是统一度量居民、公司和政府的所有经济活动。第一个正式的国名账户核算系统，可以追溯到1947年在英国经济学家Richa">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;kuznets.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;stone.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;flow.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;gdp.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;growth.png">
+<meta property="og:updated_time" content="2019-11-08T23:44:53.542Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;kuznets.jpg">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <link rel="stylesheet" href="/css/prism/prism-tomorrow-night.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-list-ul"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back_blue.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">XiaoData</h5>
+          <a href="mailto:daybreak2014@163.com" target="_blank" rel="noopener" title="daybreak2014@163.com" class="mail">daybreak2014@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/xiaoDataTech" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://zhihu.com/" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-book"></i>
+                知乎
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-film"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/"  >
+                <i class="icon icon-lg icon-info-circle"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">GDP是什么</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">GDP是什么</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-11-08T23:29:54.000Z" itemprop="datePublished" class="page-time">
+  2019-11-09
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#缘起"><span class="post-toc-number">1.</span> <span class="post-toc-text">缘起</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#定义"><span class="post-toc-number">2.</span> <span class="post-toc-text">定义</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#核算"><span class="post-toc-number">3.</span> <span class="post-toc-text">核算</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解读"><span class="post-toc-number">4.</span> <span class="post-toc-text">解读</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#中国"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">中国</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#世界"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">世界</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#不足"><span class="post-toc-number">5.</span> <span class="post-toc-text">不足</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-number">6.</span> <span class="post-toc-text">总结</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-what-is-gdp"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">GDP是什么</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-11-09 07:29:54" datetime="2019-11-08T23:29:54.000Z"  itemprop="datePublished">2019-11-09</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p>19世纪时，还没有GDP的概念，那时研究经济的学者只能借助对一些日常生活中的观察，比如商店的销售情况、货物的运输情况等，来推测整体经济的运行情况。现代意义上的GDP概念，由美国经济学家Simon Kuznets在1934年提交给国会应对大萧条的报告中提出。Kuznets当时的想法是统一度量居民、公司和政府的所有经济活动。第一个正式的国名账户核算系统，可以追溯到1947年在英国经济学家Richard Stone领导下的国家联盟统计专家委员我向联合国统计委员会递交的一份报告。随后1953年，联合国在这份报告的基础上发布了第一个国际标准的国民账户核算系统（System of National Accounts，简称SNA），由此现代国民核算系统正式建立。Simon Kuznets和Richard Stone分别获得了1971年、1984年的诺贝尔经济学奖，以表彰他们在建立以GDP为核心的国民账户核算系统方面的贡献。</p>
+<center>
+<img src="/2019/11/09/what-is-gdp/kuznets.jpg" title="Simon Kuznets">
+<img src="/2019/11/09/what-is-gdp/stone.jpg" title="Richard Stone">
+</center>
+
+<a id="more"></a>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>GDP，英文全称 Gross domestic Product，翻译为国内生产总值。到底，什么是GDP呢？我们不妨看看一些权威机构给出的答案：</p>
+<p>国家统计局,</p>
+<blockquote>
+<p>GDP是一个国家或地区的所有常驻单位在一定时期内生产的最终产品的价值总和。</p>
+</blockquote>
+<p>OECD defines that, </p>
+<blockquote>
+<p>GDP is an aggregate measure of production equal to the sum of the gross values added of all resident and institutional units engaged in production and services (plus any taxes, and minus any subsidies, on products not included in the value of their outputs).</p>
+</blockquote>
+<p>IMF states that, </p>
+<blockquote>
+<p>GDP measures the monetary value of final goods and services—that are bought by the final user—produced in a country in a given period of time (say a quarter or a year).</p>
+</blockquote>
+<p>在这个抽象的定义中包含着若干个重要的概念：</p>
+<ul>
+<li>国家地区<br>GDP的统计范围是有地域边界，既可以是单个国家（如中国），也可以是多国联盟（如欧盟）。</li>
+<li>常驻单位<br>GDP的统计对象是清晰明确的，一国经济领土内从事经济活动，并且有一定规模和时间的居民和机构。</li>
+<li>一定时期<br>GDP是一个流量概念，并非存量，衡量一段时间内的生产经营成果。</li>
+<li>市场价值<br>GDP是对市场价值的度量，各种商品和服务，以市场价格折算加总。市场价格本身隐含了买卖双方的偏好信息，在一定程度上与居民福利相关。</li>
+<li>最终成果<br>GDP只统计最终产品，不包括中间产品。最终产品不再用于生产，或转移至新产品，避免重复计算。</li>
+</ul>
+<p>GDP本质上是一个市场经济的概念，而市场经济是一个收入、支出、生产的循环过程。出售商品和服务获得的收入，通过生产要素（人力、资本、土地等）支付给居民、企业和政府。剧名、企业和政府，又将收入支出，最终汇总为消费、投资、政府购买和净出口。企业生产商品和服务出售，重新形成循环，周而复始。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/09/what-is-gdp/flow.png" alt="Circular Flow" title>
+                </div>
+                <div class="image-caption">Circular Flow</div>
+            </figure>
+<h2 id="核算"><a href="#核算" class="headerlink" title="核算"></a>核算</h2><p>GDP本身可从三个角度来理解：</p>
+<ol>
+<li>从收入角度，人力、资本、土地等生产要素的报酬，演变为居民、企业和政府收入之和，形成GDP。</li>
+<li>从支出角度，GDP是最终商品和服务的市场价值之和。而居民、企业和政府购买商品和服务的行为决策，最终形成消费、投资、政府支出和净出口。</li>
+<li>从生产角度，GDP是所有产品的价值增量之和。统计所有产品的价值增量并加总，即可形成GDP。</li>
+</ol>
+<p>每一种角度恰好对应一种GDP的核算方法：</p>
+<ol>
+<li><p>收入法GDP，从收入方面加总居民、企业和政府的收入。</p>
+<script type="math/tex; mode=display">
+GDP = 收入总量 = 劳动者报酬 + 公司盈余 + 生产税净额 + 固定资产折旧</script><p>尽管很重要，但收入法GDP的状况略显尴尬，目前只能在投入产出表（Input-Output Table）中找到。而投入产出表，仅在尾数为0、2、5、7的年份公布。</p>
+</li>
+<li><p>支出法GDP，从需求方面计算产品的最终去向。</p>
+<script type="math/tex; mode=display">
+GDP = 最终去向 = 最终消费支出 + 资本形成总额 + 净出口</script><p>其中，</p>
+<script type="math/tex; mode=display">
+最终消费支出 = 居民消费支出 + 政府消费支出</script><script type="math/tex; mode=display">
+资本形成总额 = 固定资本形成总额 + 存货变动</script><p>而固定资本又可分为有形资本（住宅、非住宅建筑、机器设备等）和无形资本，存货主要包括原财力、半成品、产成品。<br>支出法GDP在发达国家很重要，欧美每季度公布的GDP数据均是由支出法得到的。中国的支出法GDP则按年度公布，与生产法GDP的数据存在一定差异，仍需完善。</p>
+</li>
+<li><p>生产法GDP，从生产方面衡量产品的价值增量。</p>
+<script type="math/tex; mode=display">
+GDP = 价值增量 = (第一、二、三产业)[总产出 - 中间投入]</script><p>生产法GDP分季度核算和年度核算。季度核算细分至35个行业，大多使用相关指标推算，略微粗糙；年度核算细分成94个行业，充分利用财务统计资料，比较细致。目前，我国主要采用生产法和收入法混合计算，称为生产法GDP。统计局在每季度或年度下月中旬公布GDP数据。</p>
+</li>
+</ol>
+<p>上述三种方法核算GDP，从理论上讲应该是一致的。但由于资料来源不同，结果存在一定差异。GDP数据会随着初步核算、初步核实、最终核实的进度而进行修订。除此之外，经济普查还会对历史数据进行修订，包括总量与增速。对GDP历史数据的历次修订如下表所示</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>修订</th>
+<th>事项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2016</td>
+<td>1952-2015年数据</td>
+<td>改革研发支出（2008SNA）</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>1952-2013年数据</td>
+<td>2013第三次经济普查</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>2005-2008年数据</td>
+<td>2008第二次经济普查</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>1993-2004年数据</td>
+<td>2003第一次经济普查</td>
+</tr>
+<tr>
+<td>1995</td>
+<td>1978-1992年数据</td>
+<td>1995第一次三产普查</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>1978年到2018年，整整40年， GDP从区区3600亿增长到了2018年90多玩亿，这不得不用奇迹来形容。在GDP的总量图中，几乎看不到修订历史数据对GDP的影响。而在GDP的增速图中，除了08年，修订对其他年份的影响也不大。</p>
+<center>
+<img src="/2019/11/09/what-is-gdp/gdp.png" title="GDP" width="48%">
+<img src="/2019/11/09/what-is-gdp/growth.png" title="Growth" width="48%">
+</center>
+
+
+<h2 id="解读"><a href="#解读" class="headerlink" title="解读"></a>解读</h2><p>名义GDP（Nominal GDP），又称现价GDP，统计局公布的GDP总量是以当年价格计算的。<br>名义GDP=产量<em>价格，NGDP=Y</em>P。<br>产量增加和价格上升均引起名义GDP的增长。消除价格变动的因素，只统计产量变化引起的增长，叫做实际GDP（Real GDP），又称不变价GDP。可近似认为NGDP%=RGDP%+P%。<br>统计局公布的GDP增速是以基期价格计算的，基期每5年变更。2016-2020的基期为2015年，2010-2015的基期为2010年，2005-2010的基期为2005年，2000-2005的基期为2000年。<br>GDP是反应一个国家总体经济规模的最强有力的指标，可深入了解一个国家的经济结构及变化规律。</p>
+<h3 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h3><p>从产业角度，反映第一产业、第二、第三产业结构比例（可以简单理解为，农业、工业、服务业）（图片）。<br>图片分析，第一产业占比逐渐下降，第二产业占比稳定在40%，第三产业不断上升。</p>
+<p>从需求角度，反映消费、投资、净出口所占比重（图片）；<br>消费占比从60%下降至50%，投资占比从38%上升至50%</p>
+<p>从地区角度，反映不同地区经济发展差异。</p>
+<p>（年度增速曲线，增加十年平均线，1978-1989，1990-1999，2000-2009，2010-2019）</p>
+<h3 id="世界"><a href="#世界" class="headerlink" title="世界"></a>世界</h3><p>与美国、日本、韩国相比较。</p>
+<p>在国家之间进行GDP的比较时，需要将采用不同货币度量的GDP数据转换成统一的货币。通常有两种办法，一种是采用当前货币汇率，另一种是采用购买力平价（Purchasing Power Parity，简称PPP）汇率。采用当前货币汇率，可以更好的反映一个国家的国际购买力水平。高GDP国家的物价水平往往高于低GDP国家，采用力平价汇率，可以有效减小因价格水平不同而造成的地区差异。</p>
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><p>尽管GDP很重要，但它仍有很多不足。首先，GDP不能反映社会成本。经济增长过程中，对自然资源的消耗，对自然环境的破坏，都很难度量。其次，GDP不能反映增长质量。GDP是流量而不是存量，经济增长并不意味着财富增加，即使增加也可能存在地区间的不均衡发展。最后，GDP不能准确衡量社会效用。一个国家的整体效用，不仅包括经济收入，还包括闲暇、幸福、安全等，这些均无法度量。最后，让我们的视线再次回到Kuznets，细细品味他当年说过的话。</p>
+<p>In 1934, “National Income, 1929–1932”: </p>
+<blockquote>
+<p>The valuable capacity of the human mind to simplify a complex situation in a compact characterization becomes dangerous when not controlled in terms of definitely stated criteria. With quantitative measurements especially, the definiteness of the result suggests, often misleadingly, a precision and simplicity in the outlines of the object measured.</p>
+</blockquote>
+<p>In 1962, “How To Judge Quality”: </p>
+<blockquote>
+<p>Distinctions must be kept in mind between quantity and quality of growth, between costs and returns, and between the short and long run. Goals for more growth should specify more growth of what and for what.</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><center>
+<b>一看总量，二看增速，三看构成（产业、需求），四看贡献（产业，需求），五横向比较</b>
+</center>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-11-08T23:44:53.542Z" itemprop="dateUpdated">2019-11-09 07:44:53</time>
+</span><br>
+
+
+        
+        文章发布地址：<a href="/2019/11/09/what-is-gdp/" target="_blank" rel="external">http://xiaodatatech.github.io/2019/11/09/what-is-gdp/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://xiaoDataTech.github.io">
+            <img src="/img/avatar.png" alt="XiaoData">
+            XiaoData
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/&title=《GDP是什么》 — 晓数点&pic=http://xiaoDataTech.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/&title=《GDP是什么》 — 晓数点&source=缘起19世纪时，还没有GDP的概念，那时研究经济的学者只能借助对一些日常生活中的观察，比如商店的销售情况、货物的运输情况等，来推测整体经济的运行情况。现代..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《GDP是什么》 — 晓数点&url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/&via=http://xiaoDataTech.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" target="_blank" rel="noopener" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/11/09/github-blog/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">GitHub个人博客</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        感谢支持！
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+            <p>
+                
+                        <!--<span>
+                            博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a>
+                        </span>-->
+            </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>
+                XiaoData &copy;
+                    
+                                2019
+            </span>
+            <span>
+                
+                <!--     Power by 
+                        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme 
+                        <a href="https://github.com/abelsu7/hexo-theme-indigo-plus" target="_blank">indigo plus</a> 
+                        <p>Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight: bold">Github Pages</a></p> 
+                -->
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" target="_blank" rel="noopener" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" target="_blank" rel="noopener" id="gobottom" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-comments"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/&title=《GDP是什么》 — 晓数点&pic=http://xiaoDataTech.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/&title=《GDP是什么》 — 晓数点&source=缘起19世纪时，还没有GDP的概念，那时研究经济的学者只能借助对一些日常生活中的观察，比如商店的销售情况、货物的运输情况等，来推测整体经济的运行情况。现代..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《GDP是什么》 — 晓数点&url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/&via=http://xiaoDataTech.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://xiaodatatech.github.io/2019/11/09/what-is-gdp/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aS5KDMAxFUfa/aXqaCeY+KaEa+TLqSojxYaDWx8eBr/PjIveQ+2tPaV0yZMh4LeNcXuQBZOu1FcjeZMiQsQ/jaumre9bI2isgz738XIYMGTJAupYGbn6/DBkyZHQCbqdYTQO3DBkyZPDAR9K+tBh+tBaXIUPGCxn9EPm7v38y35AhQ8arGGd49RM+EoLjXcmQIWM0o9NK45vgmNp+ZMiQMZuxLik7h73Wa/LmGnqiDBkytmGk7fgarPbibtp8MmTIGM3gRWPtIBdvnNWKZxkyZOzAqA0aaxiyGg/Nwf8NGTJkjGCkhWValPLYv37WzWkRGTJkDGXw5UjqxkNkLXCTVylDhox5DD5u5KMFvsWHuoYyZMh4OSP9WTpo7IxCUfmaDjJlyJDxQgYPpukxiA6bHNQ4+NcyZMgYwag1xXgyl/42HjbIkCFjG0b/GAQfSaal7E3xLEOGjA0Y8ZiwEYLjLZI8UIYMGaMZPLzy0rRWMHeOo8mQIWMHRjoMSA9e8BFm6yiGDBkytmHwFn/tV7X10cBAhgwZGzA6gwGeVqaBOHhBMmTIGMo4w4una7WksLaCDBkyZjP4xceQteHBt5JFGTJkTGXwIEu2mB6qSFtvlyvIkCFjA0baCEtHmzz1TEO/DBkyZHTStbSRt/4cnRORIUOGjMagkSeLBPBowJUhQ8a/YdSGAZ2xZa24lSFDxp6M2hGHtCn2hU2QppsMGTKmMf4AinyodiY5uUkAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/src/js/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<!-- <script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script> -->
+<!-- <script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script> -->
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script src="/js/prism.min.js?v=1.7.2"></script>
+<script src="/js/prism-vim.min.js?v=1.7.2"></script>
+</body>
+</html>
