@@ -32,9 +32,9 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;kuznets.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;stone.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;flow.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;gdp.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;growth.png">
-<meta property="og:updated_time" content="2019-11-08T23:57:46.955Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;gdp+growth.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;growth.jpg">
+<meta property="og:updated_time" content="2019-11-13T20:17:52.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;09&#x2F;what-is-gdp&#x2F;kuznets.jpg">
     
@@ -299,15 +299,33 @@ GDP = 价值增量 = (第一、二、三产业)[总产出 - 中间投入]</scrip
 </tbody>
 </table>
 </div>
-<p>1978年到2018年，整整40年， GDP从区区3600亿增长到了2018年90多玩亿，这不得不用奇迹来形容。在GDP的总量图中，几乎看不到修订历史数据对GDP的影响。而在GDP的增速图中，除了08年，修订对其他年份的影响也不大。</p>
-<center>
-<img src="/2019/11/09/what-is-gdp/gdp.png" title="GDP" width="48%">
-<img src="/2019/11/09/what-is-gdp/growth.png" title="Growth" width="48%">
-</center>
-
-
-<h2 id="解读"><a href="#解读" class="headerlink" title="解读"></a>解读</h2><p>名义GDP（Nominal GDP），又称现价GDP，统计局公布的GDP总量是以当年价格计算的。<br>名义GDP=产量<em>价格，NGDP=Y</em>P。<br>产量增加和价格上升均引起名义GDP的增长。消除价格变动的因素，只统计产量变化引起的增长，叫做实际GDP（Real GDP），又称不变价GDP。可近似认为NGDP%=RGDP%+P%。<br>统计局公布的GDP增速是以基期价格计算的，基期每5年变更。2016-2020的基期为2015年，2010-2015的基期为2010年，2005-2010的基期为2005年，2000-2005的基期为2000年。<br>GDP是反应一个国家总体经济规模的最强有力的指标，可深入了解一个国家的经济结构及变化规律。</p>
-<h3 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h3><p>从产业角度，反映第一产业、第二、第三产业结构比例（可以简单理解为，农业、工业、服务业）（图片）。<br>图片分析，第一产业占比逐渐下降，第二产业占比稳定在40%，第三产业不断上升。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/09/what-is-gdp/gdp+growth.jpg" alt="GDP+Growth" title>
+                </div>
+                <div class="image-caption">GDP+Growth</div>
+            </figure>
+<p>1978年到2018年，整整40年， GDP从区区3600亿增长到了2018年90多万亿，成为世界第二大经济体。在40年间中国的GDP翻了250倍左右，这不得不说是一个奇迹。在GDP的总量图中，几乎看不到修订历史数据对GDP的影响。而在GDP的增速图中，除了个别年份有些许差异，大多数时候，修订历史数据均影响也不大。</p>
+<h2 id="解读"><a href="#解读" class="headerlink" title="解读"></a>解读</h2><p>名义GDP（Nominal GDP），又称现价GDP，统计局公布的GDP总量是以当期价格计算的。名义GDP等于产量乘以当期价格。</p>
+<script type="math/tex; mode=display">
+nGDP_t = Y_t \times P_t</script><p>产量增加和价格上升均引起名义GDP的增长。为了消除价格变动的因素，反映产出的实际变化，需要将不同时期的数据按某个固定基期价格折算。折算后的GDP叫做实际GDP（Real GDP），又称不变价GDP。</p>
+<script type="math/tex; mode=display">
+rGDP_t = Y_t \times P_{base}</script><p>在现实中，更关注的是实际GDP增速，简称GDP增速（GDP Growth）。</p>
+<script type="math/tex; mode=display">
+rGDP\% = rGrowth_t = \frac{rGDP_t-rGDP_{t-1}}{rGDP_{t-1}} = \frac{Y_t-Y_{t-1}}{Y_{t-1}}</script><p>根据GDP的定义简单推导，可得</p>
+<script type="math/tex; mode=display">
+nGDP\% = nGrowth_t = \frac{Y_tP_t-Y_tP_{t-1}+Y_tP_{t-1}-Y_{t-1}P_{t-1}}{Y_{t-1}P_{t-1}} \approx \frac{Y_t-Y_{t-1}}{Y_{t-1}} + \frac{P_t-P_{t-1}}{P_{t-1}}</script><p>因此通常可认为</p>
+<script type="math/tex; mode=display">
+nGDP\% \approx rGDP\% + P\%</script><p>统计局定期公布的GDP增速都是以基期价格计算的实际GDP增速。我国自开始核算GDP以来，有1952、1957、1970、1980、1990、2000、2005、2010、2015共9个基期。GDP是衡量一个国家总体经济规模的最强有力的指标，下图给出了中国1952-2018年的GDP增速图。1978年以前，经济大起大落，波动较大。改革开放以后，经济逐步平稳，大多数年份都在高速增长。经济稳定，并持续增长，这才是从平穷走向富强的正确道路。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/09/what-is-gdp/growth.jpg" alt="Growth" title>
+                </div>
+                <div class="image-caption">Growth</div>
+            </figure>
+<h3 id="中国"><a href="#中国" class="headerlink" title="中国"></a>中国</h3><p>对GDP的深入分析，可了解一个国家的经济结构及变化规律。从产业角度，反映第一产业、第二、第三产业结构比例（可以简单理解为，农业、工业、服务业）（图片）。<br>图片分析，第一产业占比逐渐下降，第二产业占比稳定在40%，第三产业不断上升。</p>
 <p>从需求角度，反映消费、投资、净出口所占比重（图片）；<br>消费占比从60%下降至50%，投资占比从38%上升至50%</p>
 <p>从地区角度，反映不同地区经济发展差异。</p>
 <p>（年度增速曲线，增加十年平均线，1978-1989，1990-1999，2000-2009，2010-2019）</p>
@@ -332,7 +350,7 @@ GDP = 价值增量 = (第一、二、三产业)[总产出 - 中间投入]</scrip
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-11-08T23:57:46.955Z" itemprop="dateUpdated">2019-11-09 07:57:46</time>
+    最后更新时间：<time datetime="2019-11-13T20:17:52.673Z" itemprop="dateUpdated">2019-11-14 04:17:52</time>
 </span><br>
 
 
@@ -413,7 +431,14 @@ GDP = 价值增量 = (第一、二、三产业)[总产出 - 中间投入]</scrip
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/11/09/html/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Html 速查</h4>
+      </a>
+    </div>
   
 
   
