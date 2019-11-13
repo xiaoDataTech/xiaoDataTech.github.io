@@ -190,37 +190,6 @@
         <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>如果把网页比作洋葱，一层包一层，那html标签就是洋葱最外层的皮， html 元素是一张网页的根元素，所以其他所有元素都是是此元素的后代。</p>
 <p>把一张网页比作一个人body标签就表示一个人所有的可见部分，如五官、四肢、痔疮… 对于真实存在的但是肉眼不可见的部分，如思想、人格、性取向等body标签是管不着的。 body包含着页面中所有的可见元素，比如链接、段落、图片… body是所有的可见元素的先人。</p>
 <p>把一张网页比作一个人head标签就包含了一个人的基础信息，虽然无法直接观察到，但确实存在， 如姓名、人格、取向… head用于包含一张网页中抽象的基础信息（元信息）。<br>head和body的区别在于body只想包含看得见摸得着的内容，如身材、长相、肤色等等， head中只能包含抽象的元信息，并不是说body不能包含抽象内容，它可以，只是它不想， 你硬要把抽象内容写进去也勉强行，但它更在乎看得见摸得着的。head不要，但body很诚实</p>
-<p>title标签用于指定浏览器标签上显示的标题，是个概括整张网页的存在，如：<br>title中只可包含文本，若是包含标签，则包含的任何标签都会按源代码显示（浏览器不解释）。<br>对搜索引擎来说title信息的重要性是无与伦比的，所以title中的信息要尽可能简洁准确。</p>
-<p>h1，h2，h3，h4，h5，h6都是标题标签，用于概括页面中不同主题的内容，其中h1最大，h2其次，依次类推，没有h7。</p>
-<p>p是段落标签（paragraph的缩写），用于给文字划分段落，一组p元素为一个段落</p>
-<p>div标签在网页中划分区域，是division的缩写，无内容通常作为容器存在。</p>
-<p>a标签定义链接，也叫做锚或锚链接，是anchor（锚）的缩写。href属性用于制定跳转的目标地址：默认<code>target=&quot;_self&quot;</code>，链接在当前页面打开；<code>target=&quot;_blank&quot;</code>，在新标签页打开。a中子元素也可作为链接，如图片链接。</p>
-<p>img用于定义网页中的图片。我们平常在网页中见到的大部分图片都是用这个标签定义的。<br>其中src（source）是img标签的一个属性，用于指定图片的地址。<br>img 不允许存在结束标签，以下的写法是有误的：<br>为什么？因为img不能存在子标签，所以无法作为容器存在，结束标签便没有意义了。 没有空间的杯子只是个玻璃块，盖子完全没有意义。<br>img支持的所有的常用图片格式: .gif、.jpg、.png、.svg…</p>
-<p>table标签用于定义表格，单独出现并没有什么用，它需要和他专有的子标签在一起才有意义。<br>table的子标签有：<br>tr（table row）：定义行，出现一组就是一行，出现多组就是多行。<br>td （table data）：定义单元格，一般包含在tr中。<br>th （table head cell）：定义表头单元格，一般包含在thead中。<br>thead （table head）：定义表头，见例子。<br>tbody （table body）：定义表身，见例子。</p>
-<p>header标签用于定义页头，也就是页面中的引导性内容，比如：<br>taobao-header<br>google-header<br>footer用于定义页脚，也就是页面中的补充性内容，比如：<br>taobao-footer<br>google-footer<br>header和footer本身和div没有任何区别，仅仅是字面上的区别，但使用它们可以让浏览器和搜索引擎更好的解读你的网页，同时也更有利于维护（一看就知道是页头页脚）。</p>
-<p>link标签用于加载外部资源（也就是不属于本页面的资源，比如样式表、雪碧图之类），script标签用于加载脚本（一般为JavaScript）。<br>这两个标签可以先做个基础的了解，它们在后面的CSS 表/9.x 和JavaScript 表/12.x 课程中会频繁的用到，一点就透，很直观。</p>
-<p>如果在表单中使用button，不同浏览器对没有type属性的按钮点击（或回车提交）的解释是不同的（不需要在乎怎么不同，反正都是坑），这种情况下就需要明确指定type属性，如果想作为表单中的提交按钮可以指定type=”submit”，如：button type=”submit”注册/button，否则指定为type=”button”即可：button type=”button”发送验证码/button<br>提交时用 input type=”submit” 还是 button type=”submit”？<br>能用button就用button，因为它的功能要更强一些。button内部可以插文字甚至图片，input就不行，它就没有“内部”<em>(:з」∠)</em>。<br>常用属性<br>type<br>button 不用说<br>submit 不用说<br>reset 重置表单，比如有一张表单，包含一个type=”reset”的按钮，点击这个按钮整张表单就会清空，见例1。</p>
-<p>abbr标签</p>
-<p>code一般用于小段代码。<br>pre用于表示文字在编辑时的状态，比如在编辑器里的状态，所以一般被用于大段代码的展示，因为“所见即所得”。</p>
-<p>input用于接收用户的输入。没有input用户就没法输入数据，登录注册什么的都不能做，复杂的表单就别想了。<br>type属性<br>input的类型比较多，每一种侧重于不同的数据类型和结构：<br>input type=”text” 默认值（可以不填type属性），用于输入文字，如用户名，昵称等等。<br>input type=”password” 密码输入，我们平时输密码时的小黑点就是这么来的。<br>input type=”radio” 单选框，在需要用到单选但选项少的情况下使用。如性别（只有两个选项）。<br>input type=”checkbox” 多选框（复选框），在需要用到多选但选项少时使用，多选，但是选项少的情况下使用。如性取向˙Ꙫ˙ 。<br>input type=”file” 选择文件，上传文件必用。<br>input type=”reset” 重置表单。<br>input type=”hidden” value=”秘密” 隐形输入框，一般用于在表单提交时回传重要的令牌（就是一串自产自销的无序字符）来验证用户是真的或状态是对的。<br>input type=”button” value=”点我” 按钮，不推荐，正常情况下使用button即可，因为button可以包含子元素，而input不行，灵活度的问题。</p>
-<p>在HTML中元素即标签。</p>
-<p>html<br>是网页的最外层元素，包含着一张网页全部的内容。</p>
-<p>body<br>网页中所有的可视内容都应该包含在body元素中。</p>
-<p>head<br>用于包含一张网页中抽象的基础信息（元信息），如标题，描述等等。<br>其中的信息通常是给机器看的。</p>
-<p>title<br>用于指定浏览器标签上显示的标题，用于概括整张网页。</p>
-<p>div<br>可用于网页中的区域划分，通常作为容器而存在。</p>
-<p>a<br>用于定义链接。</p>
-<p>button<br>用于定义按钮。</p>
-<p>link<br>用于引入外部资源如CSS。</p>
-<p>script<br>用于引入脚本（一般为JS）。</p>
-<p>h1, h2, h3, h4, h5, h6<br>标题标签，用于概括页面中的部分的内容，其中h1最大，h2其次，依次类推，没有h7。</p>
-<p>span<br>与div元素类似，只不过div用于插入整段（块）而span用于插入一个词，在表现上和普通文字没有区别。</p>
-<p>input<br>用于输入数据。<br>input type=”text” 文字输入，默认值。<br>input type=”radio” 单选，但是选项少的情况下使用。如性别（只有两个选项）。<br>input type=”checkbox” 多选，但是选项少的情况下使用。如性取向。<br>input type=”button” value=”点我” 按钮，不推荐，正常情况下button元素完全可以取代他。<br>select<br>下拉菜单，多选单选均可。</p>
-<p>img<br>用于显示图片。</p>
-<p>p<br>用于给文字划分段落，一个p就是以自然段。<br>参考：表/6.6<br>table, thead, tbody, tr, th, td<br>用于插入表格。</p>
-<p>table<br>表格的最外层容器。<br>thead<br>表头。<br>tbody<br>表身。<br>tr<br>行。<br>td<br>单元格。<br>th<br>页头中的单元格。<br>偶尔使用<br>code, pre<br>都是用于定义代码，pre用于定义长代码（代码块），code用于定义短代码（如变量，函数名等）。</p>
-<p>abbr<br>用于定义缩写（abbreviation）。</p>
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2>
     
 
         <a href="/2019/11/09/html/" class="post-more waves-effect waves-button">
