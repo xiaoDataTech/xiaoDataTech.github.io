@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>&#39;price-index&#39; | 晓数点 | Above all else, show the data.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="Consumer Price Index居民消费价格指数（Consumer Price Index，简称CPI），衡量一定时间内与居民生活有关的商品和服务的整体价格水平变动，可以反映宏观经济整体的通货膨胀或通货紧缩。CPI中的一篮子商品，按照消费支出的分类标准（COICOP），结合结合抽样调查资料确定，涵盖食品、烟酒及用品、衣着、家庭设备用品及服务、医疗保健及个人用品、交通和通信、娱乐教育文化用品">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#39;price-index&#39;">
+<meta property="og:url" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;index.html">
+<meta property="og:site_name" content="晓数点">
+<meta property="og:description" content="Consumer Price Index居民消费价格指数（Consumer Price Index，简称CPI），衡量一定时间内与居民生活有关的商品和服务的整体价格水平变动，可以反映宏观经济整体的通货膨胀或通货紧缩。CPI中的一篮子商品，按照消费支出的分类标准（COICOP），结合结合抽样调查资料确定，涵盖食品、烟酒及用品、衣着、家庭设备用品及服务、医疗保健及个人用品、交通和通信、娱乐教育文化用品">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;cpi1978.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;cpinfood.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;cpinfoodlm.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;ppi1978.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;ppi2000.jpg">
+<meta property="og:updated_time" content="2019-11-16T18:16:40.822Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;16&#x2F;price-index&#x2F;cpi1978.jpg">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <link rel="stylesheet" href="/css/prism/prism-tomorrow-night.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-list-ul"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back_blue.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">XiaoData</h5>
+          <a href="mailto:daybreak2014@163.com" target="_blank" rel="noopener" title="daybreak2014@163.com" class="mail">daybreak2014@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/xiaoDataTech" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-github"></i>
+                代码
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://zhihu.com/" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-book"></i>
+                知乎
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-film"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/"  >
+                <i class="icon icon-lg icon-info-circle"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">&#39;price-index&#39;</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">&#39;price-index&#39;</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-11-16T07:45:40.000Z" itemprop="datePublished" class="page-time">
+  2019-11-16
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Consumer-Price-Index"><span class="post-toc-number">1.</span> <span class="post-toc-text">Consumer Price Index</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Producer-Price-Index"><span class="post-toc-number">2.</span> <span class="post-toc-text">Producer Price Index</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Housing-Price-Index"><span class="post-toc-number">3.</span> <span class="post-toc-text">Housing Price Index</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-price-index"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">'price-index'</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-11-16 15:45:40" datetime="2019-11-16T07:45:40.000Z"  itemprop="datePublished">2019-11-16</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Consumer-Price-Index"><a href="#Consumer-Price-Index" class="headerlink" title="Consumer Price Index"></a>Consumer Price Index</h2><p>居民消费价格指数（Consumer Price Index，简称CPI），衡量一定时间内与居民生活有关的商品和服务的整体价格水平变动，可以反映宏观经济整体的通货膨胀或通货紧缩。CPI中的一篮子商品，按照消费支出的分类标准（COICOP），结合结合抽样调查资料确定，涵盖食品、烟酒及用品、衣着、家庭设备用品及服务、医疗保健及个人用品、交通和通信、娱乐教育文化用品及服务、居住等8大类，不包括奢侈品、投资品和工业品。一篮子商品，每5年更换一次，权重根据全国城乡居民家庭消费支出资料和部分调查资料计算。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/16/price-index/cpi1978.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>上图给出了1978-2018年的CPI变化趋势。1980年，包产到户、农产品价格快速上涨；1985-1989年，开启城市化、大兴基建，水泥、建材等原材料上涨；1992-1996年，固定资产投资增速过快，信贷增速过大；1998-1999年，亚洲金融危机；2004、2007、2008年，食品价格快速上涨；2009年，美国次贷风暴；2019年，非洲猪瘟导致猪肉价格大幅上涨。上世纪80、90年代，全球通胀高企。进入2000年以后，通胀得以控制，CPI基本稳定。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/16/price-index/cpinfood.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>2000年以后，CPI的一篮子商品中，波动较大的是食品价格。食品价格与CPI有很强的相关性，在一定程度上决定了CPI的变化。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/16/price-index/cpinfoodlm.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="Producer-Price-Index"><a href="#Producer-Price-Index" class="headerlink" title="Producer Price Index"></a>Producer Price Index</h2><p>工业生产者出厂价格指数（Producer Price Index，简称PPI），衡量一定时期内工业企业产品的整体价格水平变动，亦可反映宏观经济整体的通货膨胀或通货紧缩。选取生产稳定、影响较大的工业产品作为代表，根据工业企业产品调查确定权重。按生产资料、生活资料分类：生产资料主要指中间消耗品，如煤炭、原油、钢材等，生活资料主要指生活消费品。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/16/price-index/ppi1978.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>1985-1993年，价格管制逐步放开，生产投资加速增长；1997-2002你，亚洲金融危机，经济下行；2003-2008年，不断进口原油、铁矿等大宗商品，PPI新一轮上涨；2009年，世界金融危机；2010-2011年，四万亿政策及全球货币快速；2012年，欧债危机；2018年，中美贸易摩擦。</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2019/11/16/price-index/ppi2000.jpg" alt title>
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h2 id="Housing-Price-Index"><a href="#Housing-Price-Index" class="headerlink" title="Housing Price Index"></a>Housing Price Index</h2><p>未完待续！</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-11-16T18:16:40.822Z" itemprop="dateUpdated">2019-11-17 02:16:40</time>
+</span><br>
+
+
+        
+        文章发布地址：<a href="/2019/11/16/price-index/" target="_blank" rel="external">http://xiaodatatech.github.io/2019/11/16/price-index/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://xiaoDataTech.github.io">
+            <img src="/img/avatar.png" alt="XiaoData">
+            XiaoData
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://xiaodatatech.github.io/2019/11/16/price-index/&title=《'price-index'》 — 晓数点&pic=http://xiaoDataTech.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://xiaodatatech.github.io/2019/11/16/price-index/&title=《'price-index'》 — 晓数点&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://xiaodatatech.github.io/2019/11/16/price-index/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《'price-index'》 — 晓数点&url=http://xiaodatatech.github.io/2019/11/16/price-index/&via=http://xiaoDataTech.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://xiaodatatech.github.io/2019/11/16/price-index/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" target="_blank" rel="noopener" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/11/09/html/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Html 速查</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        感谢支持！
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+            <p>
+                
+                        <!--<span>
+                            博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a>
+                        </span>-->
+            </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>
+                XiaoData &copy;
+                    
+                                2019
+            </span>
+            <span>
+                
+                <!--     Power by 
+                        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme 
+                        <a href="https://github.com/abelsu7/hexo-theme-indigo-plus" target="_blank">indigo plus</a> 
+                        <p>Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight: bold">Github Pages</a></p> 
+                -->
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" target="_blank" rel="noopener" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" target="_blank" rel="noopener" id="gobottom" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-comments"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://xiaodatatech.github.io/2019/11/16/price-index/&title=《'price-index'》 — 晓数点&pic=http://xiaoDataTech.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://xiaodatatech.github.io/2019/11/16/price-index/&title=《'price-index'》 — 晓数点&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://xiaodatatech.github.io/2019/11/16/price-index/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《'price-index'》 — 晓数点&url=http://xiaodatatech.github.io/2019/11/16/price-index/&via=http://xiaoDataTech.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://xiaodatatech.github.io/2019/11/16/price-index/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQXLCMBAEQP7/afKAxGZmZVJluX2iiEDqHJaVRq9X/Lx/PcmYo5HJLK9vPBgYGLdlvE+fZIktcn3eP2bBwMB4AONo4qPXyTt5GT3/7Pl4DAwMjParZ6UZAwMD41rG+afy/WZeyjEwMDDyQrlSfM/bxH/di2NgYNyQsV4iv/f6K/kGBgbGrRjv8smjx1moMFwVBgbG1oy8wK0soo0K2vVgYGDszWiLab6BzI/nkkO9DzNiYGA8hnFVSNnOlbSSH0o2BgbG1ozZEtdjg3wbnF8mw8DA2JuRFMG2E7s2towKNwYGxqaMZFBe8taLZvuPeyV7XwwMjJsz2sOyWdh5VaNZRwgYGBhbMPLmbBYJ5Ad5s9YTAwPjCYyVBDAJGtvLYW3RvyDIxMDAuAljJXScxQP5d7YBAwYGxt6MvPzlf80P4JKRxWULDAyMjRhJ89c2jm1TmBfxw5EYGBiPYbSbw7ywzlrDIs7EwMDYmrFySavdarbFvR2DgYGxN6O96NBGjLOF1lcxMDAwHsBYn2BW/VaKLAYGxjMZs+Oz/DrF7PAuiigwMDA2ZbzLpw0X81K7FEVgYGBszZhdEcvH1O1d3Fa2MQYGBsbdGXmRbQHJFnflOK/49cDAwNiC0R6ZzZBXbWIPCy4GBgZGeQmsPcjLW8al2xwYGBiPYbTb1FlQWgSfGBgYD2DMwoBZIW5r5sXHbRgYGDdkzK44tIdiFywiOXTDwMDYjfED+f9BzzqOtBMAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/src/js/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script src="/js/prism.min.js?v=1.7.2"></script>
+<script src="/js/prism-vim.min.js?v=1.7.2"></script>
+</body>
+</html>
