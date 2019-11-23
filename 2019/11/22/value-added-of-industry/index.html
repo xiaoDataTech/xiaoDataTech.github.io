@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>工业增加值增速 | 晓数点 | Above all else, show the data.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="定义工业增加值是一个国家或地区一定时期工业生产价值的增加变动。统计局公布的工业增加值，是规模以上工业增加值，仅统计年主营业务收入2000万元以上的工业企业。规模以上工业增加值，可占全部工业增加值的80%，代表性高。并且，按月统计、计算、公布，时效性强，是检测宏观经济趋势的重要指标。由于农历春节的影响，2005年起，1月、2月数据不再单独公布，仅公布1-2月累计数据。 统计范围变化情况如下表所示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工业增加值增速">
+<meta property="og:url" content="http:&#x2F;&#x2F;xiaodatatech.github.io&#x2F;2019&#x2F;11&#x2F;22&#x2F;value-added-of-industry&#x2F;index.html">
+<meta property="og:site_name" content="晓数点">
+<meta property="og:description" content="定义工业增加值是一个国家或地区一定时期工业生产价值的增加变动。统计局公布的工业增加值，是规模以上工业增加值，仅统计年主营业务收入2000万元以上的工业企业。规模以上工业增加值，可占全部工业增加值的80%，代表性高。并且，按月统计、计算、公布，时效性强，是检测宏观经济趋势的重要指标。由于农历春节的影响，2005年起，1月、2月数据不再单独公布，仅公布1-2月累计数据。 统计范围变化情况如下表所示">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-21T19:02:53.129Z">
+<meta name="twitter:card" content="summary">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <link rel="stylesheet" href="/css/prism/prism-tomorrow-night.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-list-ul"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/back_blue.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">XiaoData</h5>
+          <a href="mailto:daybreak2014@163.com" target="_blank" rel="noopener" title="daybreak2014@163.com" class="mail">daybreak2014@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives/"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/xiaoDataTech" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-github"></i>
+                代码
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://zhihu.com/" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-book"></i>
+                知乎
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com" target="_blank" rel="noopener"  >
+                <i class="icon icon-lg icon-film"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/"  >
+                <i class="icon icon-lg icon-info-circle"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">工业增加值增速</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" target="_blank" rel="noopener" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">工业增加值增速</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-11-21T17:48:18.000Z" itemprop="datePublished" class="page-time">
+  2019-11-22
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#定义"><span class="post-toc-number">1.</span> <span class="post-toc-text">定义</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算"><span class="post-toc-number">2.</span> <span class="post-toc-text">计算</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解读"><span class="post-toc-number">3.</span> <span class="post-toc-text">解读</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-value-added-of-industry"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">工业增加值增速</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-11-22 01:48:18" datetime="2019-11-21T17:48:18.000Z"  itemprop="datePublished">2019-11-22</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>工业增加值是一个国家或地区一定时期工业生产价值的增加变动。统计局公布的工业增加值，是规模以上工业增加值，仅统计年主营业务收入2000万元以上的工业企业。规模以上工业增加值，可占全部工业增加值的80%，代表性高。并且，按月统计、计算、公布，时效性强，是检测宏观经济趋势的重要指标。由于农历春节的影响，2005年起，1月、2月数据不再单独公布，仅公布1-2月累计数据。</p>
+<p>统计范围变化情况如下表所示</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>统计范围</th>
+<th>企业数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1994年</td>
+<td>乡及乡以上工业企业</td>
+<td>46万</td>
+</tr>
+<tr>
+<td>1998年</td>
+<td>国有和年主营业务收入500万远及以上的非国有企业</td>
+<td>16.5万</td>
+</tr>
+<tr>
+<td>2007年</td>
+<td>年主营业务收入500万元及以上的工业企业</td>
+<td>45.3万</td>
+</tr>
+<tr>
+<td>2011年</td>
+<td>年主营业务收入2000万元及以上的工业企业</td>
+<td>34.4万</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>尽管经历过若干次规则调整，但不同年份的数据仍具有可比性。一方面，变更前后符合条件的企业范围基本在同一数量级，且剔除的一般为小企业，对工业增加值的整体影响很小。另一方面，工业增加值增速是根据同一规则计算的，保证了数据的可比性。</p>
+<h2 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h2><p>年度工业增加值采用“收入法”计算，</p>
+<script type="math/tex; mode=display">
+年度工业增加值 = 固定资产折旧 + 劳动者报酬 + 生产税净额 + 营业盈余</script><p>月度工业增加值采用推算法，</p>
+<script type="math/tex; mode=display">
+月度工业增加值 = 月度工业总产值 \times 工业增加值率</script><p>其中，工业增加值率是通过上年度的成本费用调查取得的。</p>
+<p>2004年以前，工业增加值增速采用不变价增加值法。现在采用价格指数缩减法：首先，由推算法得出现行价格月度工业增加；然后，用PPI剔除价格变动因素计算可比价格工业增加值；最后，以可比价格工业增加值除以基期工业增加值计算工业增加值增速。</p>
+<h2 id="解读"><a href="#解读" class="headerlink" title="解读"></a>解读</h2><p>工业增加值增速反映工业企业景气状况，与GDP增速的变化趋势紧密相关，可判断宏观经济走势。经济景气时，两者均上升，工业增加值增速上升速度更快；经济衰退时，两者均下降，工业增加值增速下降速度更快。工业占GDP三成以上，与各个产业联系紧密、与经济周期高度相关，并调节迅速反映灵敏，是GDP的领先指标。<br>（VAI GDP增速图）</p>
+<p>可分行业、分地区深入了解增长趋势。</p>
+<p>月度工业增加值累计增速是规模以上工业企业增速，季度工业增加值累计增速是全部工业企业增速。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-11-21T19:02:53.129Z" itemprop="dateUpdated">2019-11-22 03:02:53</time>
+</span><br>
+
+
+        
+        文章发布地址：<a href="/2019/11/22/value-added-of-industry/" target="_blank" rel="external">http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://xiaoDataTech.github.io">
+            <img src="/img/avatar.png" alt="XiaoData">
+            XiaoData
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/&title=《工业增加值增速》 — 晓数点&pic=http://xiaoDataTech.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/&title=《工业增加值增速》 — 晓数点&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《工业增加值增速》 — 晓数点&url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/&via=http://xiaoDataTech.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" target="_blank" rel="noopener" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/11/22/fixed-asset-investment/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">固定资产投资</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/11/16/price-index/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">价格指数</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        感谢支持！
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+            <p>
+                
+                        <!--<span>
+                            博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a>
+                        </span>-->
+            </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>
+                XiaoData &copy;
+                    
+                                2019
+            </span>
+            <span>
+                
+                <!--     Power by 
+                        <a href="http://hexo.io/" target="_blank">Hexo</a> Theme 
+                        <a href="https://github.com/abelsu7/hexo-theme-indigo-plus" target="_blank">indigo plus</a> 
+                        <p>Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight: bold">Github Pages</a></p> 
+                -->
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" target="_blank" rel="noopener" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+<a href="javascript:;" target="_blank" rel="noopener" id="gobottom" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-comments"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/&title=《工业增加值增速》 — 晓数点&pic=http://xiaoDataTech.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/&title=《工业增加值增速》 — 晓数点&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《工业增加值增速》 — 晓数点&url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/&via=http://xiaoDataTech.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://xiaodatatech.github.io/2019/11/22/value-added-of-industry/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACwElEQVR42u3aQY7bMBAEQP//0xsgpwRZy90zop0gxdPCsCSWFiDHPXw84vH1cyR//zqu73N9/z/v8+zaGwYeHh7eaOrPRvL4Gez6m8l8oqfj4eHhHePli3W73LevKXl6MRM8PDy8j/JmC3depl9vHnh4eHj/Iu/6Adel7WzzSKh4eHh4n+K1C30esCbl+PVLeVPWgoeHh9elrLc1wN7z98f6e3h4eP8976scybVtyZtsP7OBh4eHd4K3b+rngOTzvHDPXygeHh7evbz9dPMgoI0VZtvGb1fh4eHhHeDlS3ne1J8t/ftYti6p8fDw8Ba8PMCdHZnKP59tS7M74+Hh4c14m6U/L3Dbl5K/oGHXDg8PD2/NSx7QbhKbUHh2AuLpbwU8PDy8W3n5RJPlPo8SkpBidtSg6PXh4eHhLXh5qJovyjlsU45H1+Lh4eHdytu08Gflb3vEqo088PDw8D7F20S9ebncbgltBIyHh4d3jjcLZzfNqvwwVlv64+Hh4Z3mbZped8W4edGcH+EatsHw8PDwSt5s6U82lU2LK48wXmwPeHh4eAd4s2NMSStrtvS3ZXeNxMPDwxvx2gfPAEXwWhb3L2aCh4eH90beLDLIW2j7gjsKfPHw8PAO8PJG/qzhVOfHZeFeh854eHh4a95m0U+2k1l4MWvC3fC/wsPDw1v81M8X/eT7eam9D5G/+cWAh4eHdysvf8ys6ZWX43mnbnUmAg8PD2/Ny2+UL8Qtvo1xi6gCDw8P7y28vK01m0R7z9lRrehkAR4eHt6IdyIRbePdTVj8uGvg4eHhlbxZuyu/6vrzfOr53fDw8PDew0s2gzZUbcGbVtyLo1d4eHh4H+KdK7iLowDtUQM8PDy8v4A3K3nPRR5RVo2Hh4d3gLc/ONVOtI088tUeDw8P7zSvXbLvaqclL2uzzeDh4eEd4P0AOq99gmzObMIAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/src/js/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<!-- <script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script> -->
+<!-- <script async src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script> -->
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+<script src="/js/prism.min.js?v=1.7.2"></script>
+<script src="/js/prism-vim.min.js?v=1.7.2"></script>
+</body>
+</html>
